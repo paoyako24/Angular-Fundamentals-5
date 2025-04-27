@@ -1,1 +1,11 @@
-<p>register works!</p>
+<div class="card">
+    <h2 class="text-2xl mb-4">Crear una nueva cuenta</h2>
+  
+    <div class="flex flex-col gap-4">
+      <input id="username" type="text" placeholder="Usuario" class="border p-2 rounded" />
+      <input id="email" type="email" placeholder="Correo electrónico" class="border p-2 rounded" />
+      <input id="password" type="password" placeholder="Contraseña" class="border p-2 rounded" />
+  
+      <button (click)="register()" class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded">Registrar</button>
+    </div>
+  </div>

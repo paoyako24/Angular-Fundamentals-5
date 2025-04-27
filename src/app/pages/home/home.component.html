@@ -1,0 +1,16 @@
+<div class="card">
+    <h2 class="text-2xl mb-4">Superhéroes Registrados</h2>
+  
+    <div *ngFor="let hero of heroes" class="flex justify-between items-center border p-2 rounded mb-2">
+      <div>
+        <p><strong>Nombre:</strong> {{ hero.heroName }}</p>
+        <p><strong>Identidad Secreta:</strong> {{ hero.heroIdentity }}</p>
+        <p><strong>Poderes:</strong> {{ hero.heroPower }}</p>
+      </div>
+      <div class="flex gap-2">
+        <button (click)="viewHero(hero)" class="bg-blue-500 text-white px-2 py-1 rounded">Ver</button>
+        <button (click)="editHero(hero)" class="bg-yellow-500 text-white px-2 py-1 rounded">Actualizar</button>
+        <button (click)="deleteHero(hero)" class="bg-red-600 text-white px-2 py-1 rounded">Eliminar</button>
+      </div>
+    </div>
+  </div>
